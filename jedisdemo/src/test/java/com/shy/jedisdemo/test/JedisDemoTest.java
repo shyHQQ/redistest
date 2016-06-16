@@ -13,10 +13,6 @@ public class JedisDemoTest {
 
     @Before
     public void init(){
-        String host = "pub-redis-17123.us-east-1-3.4.ec2.garantiadata.com";
-        int port = 17123;
-        int timeout = 10000;
-        String auth = "lin72557";
         jedis = new Jedis(host, port, timeout);
         jedis.auth(auth);
     }
